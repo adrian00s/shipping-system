@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Kanit:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+body {
+  background: #0C65A1;
+}
+
+p, span, i, em, li {
+  font-family: 'Quicksand';
+}
+
+.header__title {
+  font-size: 4.0625rem;
+  text-shadow: 1px 2px 8px #000;
+  margin-top: 50px;
+  font-family: 'Kanit';
+}
+
+@media (max-width: 1200px) {
+  .header__title {
+    font-size: calc(1.53125rem + 3.375vw) ;
+  }
+}
+/*# sourceMappingURL=styles-index.css.map */
