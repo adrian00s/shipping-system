@@ -9,8 +9,8 @@
     <!-- VENDORS -->
     <link rel="stylesheet" href="css/vendors/bootstrap.min.css">
     <link rel="stylesheet" href="css/vendors/mdb.min.css">
-
     <link rel="stylesheet" href="css/vendors/all.min.css">
+    <link rel="stylesheet" href="css/vendors/hover-min.css">
 
     <!-- OWN STYLES -->
     <link rel="stylesheet" href="css/styles-index.css">
@@ -18,7 +18,14 @@
 <body>
 
     <header>
-        <h1 class="text-white text-center header__title">Shipping System</h1>
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-12 text-center mt-3 mt-xl-4"> 
+                        <h1 class="mr-md-3 text-white d-inline text-center header__title"> 
+                            <img height="80" class="header__logo" src="img/main-icon.png" alt="">Shipping System</h1>
+                    </div>
+                </div><!-- end row -->
+        </div><!-- end container -->
     </header>
 
     <main>
@@ -30,17 +37,40 @@
 
             <div class="row">
                 <div class="col-md-8 mr-auto ml-auto">
-                    <p class="text-white">This is a shipping system designed purely with JS. You can take a look
-                        at my GitHub for more projects.
-                        <a href="#" class="text-white"><i class="fas fa-abacus"></i>asa</a>
+                    <p class="text-white text-justify">This is a shipping system designed purely with JS. You can take a look
+                        at my <strong class="font-weight-bold">GitHub</strong> for more projects
+                        <a href="https://github.com/adrian00s" target="blank" class="hvr-icon-grow text-white">
+                            <i class="fab fa-github hvr-icon icon-shadow"></i>.
+                        </a>
+                    </p>
+                    <p class="text-white text-justify">The main idea of this project is to design a simple, beautiful and usable
+                        shipping system to show my skill using <strong class="font-weight-bold">JavaScript</strong>.  
+                        Other technologies like <strong class="font-weight-bold">jQuery</strong> 
+                        or <strong class="font-weight-bold">SCSS</strong> are used. 
+                    </p>
+                    <p class="text-white text-justify">
+                         If you are willing to start your shipment please click the button to go to the next step.
                     </p>
                 </div><!-- end col-md-8 -->
             </div><!-- end row -->
+
+            <div class="row">
+                <div class="col-md-12 text-center mt-2">
+                    <a href="begin-shipment.html" class="btn btn-primary">Begin shipment</a>
+                </div>
+            </div>
 
         </div><!-- end container -->
     </main>
 
 
+<footer class="page-footer font-small unique-color-dark fixed-bottom">
+        <div class=" text-center py-3">
+          <span>Made with 
+              <a href="https://github.com/adrian00s" target="blank" class="mb-1 hvr-icon-pop">
+                <i class="hvr-icon fas text-danger fa-heart"></i></a> by Adrian </span>
+        </div>
+</footer><!-- end footer -->
 
 
 
