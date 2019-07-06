@@ -1,0 +1,26 @@
+// IMPORTS
+@import url('https://fonts.googleapis.com/css?family=Kanit:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+
+
+// BLOCK ==========================
+body { background: #0C65A1; }
+p, span, i, em,li { font-family: 'Quicksand'; }
+
+
+
+
+// ELEMENT ========================
+.main-content { display: none; }
+.header__logo { filter: drop-shadow(1px 1px 2px #000); }
+.sidenav__selected { background: #310269 !important; }
+.select-dropdown{color: white;}
+
+
+
+
+
+
+// MODIFIER =======================
+.icon-shadow { text-shadow: 0px 0px 5px #000; }
