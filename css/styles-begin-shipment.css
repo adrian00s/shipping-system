@@ -2,10 +2,30 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
 body {
   background: #0C65A1;
+  height: 100%;
+  font-family: 'Quicksand';
+}
+
+html {
+  height: 100%;
 }
 
 p, span, i, em, li {
   font-family: 'Quicksand';
+}
+
+main {
+  min-height: 100%;
+  margin-bottom: -58px;
+}
+
+main:after {
+  content: "";
+  display: block;
+}
+
+footer, main:after {
+  height: 58px;
 }
 
 .main-content {
@@ -17,15 +37,69 @@ p, span, i, em, li {
           filter: drop-shadow(1px 1px 2px #000);
 }
 
-.sidenav__selected {
-  background: #310269 !important;
-}
-
 .select-dropdown {
   color: white;
 }
 
+@media only screen and (min-width: 300px) and (max-width: 803px) {
+  .select-department__row {
+    margin: 0 auto;
+  }
+}
+
 .icon-shadow {
   text-shadow: 0px 0px 5px #000;
+}
+
+.select-wrapper span.caret {
+  color: #fff !important;
+}
+
+.sidenav-selected {
+  background: #310269 !important;
+}
+
+button.mdb-autocomplete-clear svg {
+  fill: #fff;
+}
+
+.md-form .prefix.active {
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.md-form input[type=email]:focus:not([readonly]) {
+  border-bottom: 1.5px solid #fff;
+  -webkit-box-shadow: 0 0.5px 0 0 #000;
+          box-shadow: 0 0.5px 0 0 #000;
+}
+
+.md-form textarea:focus:not([readonly]) {
+  border-bottom: 1.5px solid #fff !important;
+  -webkit-box-shadow: 0 0.5px 0 0 #000 !important;
+          box-shadow: 0 0.5px 0 0 #000 !important;
+}
+
+.disabled {
+  display: none;
+}
+
+.form-check-input[type=checkbox] + label {
+  color: #fff;
+}
+
+.form-check-input[type=checkbox] + label:before,
+.form-check-input[type=checkbox]:not(.filled-in) + label:after,
+label.btn input[type=checkbox] + label:before,
+label.btn input[type=checkbox]:not(.filled-in) + label:after {
+  border: 2px solid #fff;
+}
+
+.form-check-input[type=checkbox]:checked + label:before,
+label.btn input[type=checkbox]:checked + label:before {
+  border-right: 2px solid #03E009;
+  border-bottom: 2px solid #03E009;
+  -webkit-filter: drop-shadow(2px 4px 6px black);
+          filter: drop-shadow(2px 4px 6px black);
 }
 /*# sourceMappingURL=styles-begin-shipment.css.map */
