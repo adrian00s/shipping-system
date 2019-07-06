@@ -136,5 +136,14 @@
     <script src="js/vendors/mdb.min.js"></script>
     <script src="js/sidebar.js"></script>
     <script src="js/select-options.js"></script>
+    <script src="js/vendors/devtools-detect.js"></script>
+    <script type="module">
+                // Get notified when it's opened/closed or orientation changes
+            window.addEventListener('devtoolschange', event => {
+                if(event.detail.isOpen){
+                    $('.main-content').css('display','none');
+                }
+            });
+        </script>
 </body>
 </html>
