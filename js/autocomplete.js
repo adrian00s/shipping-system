@@ -54,6 +54,13 @@ function getVal(){
             inputBlur: '2px solid #02DA2F',
             inputBlurShadow: '0 1px 0 0 #03841C',
         });
+    }else if(!provincias.includes(getTo.value) && provincias.includes(getFrom.value)){
+        $(this).mdbAutocomplete({
+            inputFocus: '2px solid #F1F322',
+            inputFocusShadow: '0 1px 0 0 #A4B702',
+            inputBlur: '2px solid #02DA2F',
+            inputBlurShadow: '0 1px 0 0 #03841C',
+        });
     }else{
         $(this).mdbAutocomplete({
             inputFocus: '2px solid #F1F322',
