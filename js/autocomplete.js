@@ -22,7 +22,7 @@ $('#to-autocomplete').mdbAutocomplete({
 
 var getFrom = document.getElementById('from-autocomplete');
 var getTo = document.getElementById('to-autocomplete');
-var submit = document.getElementById('form__submit');
+var submit = document.getElementsByClassName('submit__btns');
 
 
 $('#from-autocomplete, #to-autocomplete').autocomplete({

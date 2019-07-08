@@ -55,8 +55,21 @@ input[type=text] { font-weight: bold; }
 
 .ui-menu li:hover { background: #eee; }
 
+.side-nav .collapsible-body button {
+    padding-left: 47px;
+    height: 36px;
+    line-height: 36px;
+    background-color: rgba(0,0,0,.15);
+    border: 0;
+}
 
-
+.side-nav .collapsible button {
+    color: #fff;
+    font-weight: 300;
+    font-size: .8rem;
+    height: 36px;
+    line-height: 36px;
+}
 
 
 // MODIFIER =======================
