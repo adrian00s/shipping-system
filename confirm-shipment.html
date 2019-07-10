@@ -88,36 +88,91 @@
       </div>
  <!-- DESIGN PURPOSES -->
 
- <div class="container">
+ <div class="container" id="shipment-details">
      <div class="row">
          <div class="col-md-12">
             <div class="card testimonial-card">
 
-                <!-- Background color -->
                 <div class="card-up blue-gradient"></div>
               
-                <!-- Avatar -->
                 <div class="avatar mx-auto white">
-                  <img src="img/main-icon.png" class="header__logo rounded-circle" alt="woman avatar">
+                  <img src="img/main-icon.png" class="header__logo rounded-circle" alt="Shipment logo">
                 </div>
               
-                <!-- Content -->
                 <div class="card-body">
-                  <!-- Name -->
                   <h4 class="card-title">Shipment Resume</h4>
                   <hr>
-                  <!-- Quotation -->
-                  <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci</p>
-                </div>
-              
-              </div>
-              <!-- Card -->
-         </div>
-     </div>
- </div>
+                  <p>This is your shipment resume. Please review this information and press the finish button.</p>
 
+                  <div class="container p-0">
+                    <div class="row">
+                      <div class="col-md-12 text-left">
+                        <p id="selectedDepartment" class="font-weight-bold">Department:</p>
+                        <p id="wouldLikeToSend" class="font-weight-bold">You would like to send:</p>
+                        <p id="whoAreYou" class="font-weight-bold">Signed by:</p>
+                        <p id="sendFrom" class="font-weight-bold">Send From:</p>
+                        <p id="sendTo" class="font-weight-bold">Send To:</p>
+                        <p id="email" class="font-weight-bold">Your email:</p>
+                        <p id="details" class="font-weight-bold">More details:</p>
+                      </div><!-- end col-md-12 -->
+                    </div>
+                  </div><!-- end container -->
+
+                </div><!-- end card-body -->
+            
+              </div>
+         </div><!-- end col-md-12 -->
+     </div><!-- end row -->
+ </div><!-- end container -->
  
-    </main>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center mt-2 mb-2">
+          <button id="hide-shipment-details" data-toggle="modal" data-target="#centralModalSuccess" type="button" class="btn btn-success"><i class="far fa-check fa-2x"></i> FINISH SHIPMENT</button>
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+
+
+<div class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-notify modal-success" role="document">
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+      <p class="heading lead">Success</p>
+
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true" class="white-text">&times;</span>
+      </button>
+    </div>
+
+
+    <div class="modal-body">
+      <div class="text-center">
+        <i class="fas fa-check fa-4x mb-3 animated jackInTheBox"></i>
+        <p id="modalMessage">Your order has been successfully sent to <span class="font-weight-bold">Logistics</span> Department. 
+        An e-mail will be sent to</p>
+      </div>
+    </div><!-- end body -->
+
+
+    <div class="modal-footer justify-content-center">
+      <a href="index.html" type="button" id="ok-modal" class="btn btn-outline-success waves-effect">OK, thanks <i class="fal fa-smile-beam"></i></a>
+    </div>
+
+  </div><!-- end modal content -->
+</div><!-- end modal-dialog -->
+</div><!-- end modal fade -->
+</div><!-- end container -->
+  
+  
+
+  
+ </main>
 
 
 
@@ -160,5 +215,6 @@
             });
       </script>
       <script type="module" src="js/summary.js"></script>
+      <script src="js/modal.js"></script>
 </body>
 </html>

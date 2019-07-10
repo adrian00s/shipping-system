@@ -77,8 +77,14 @@ getFrom.addEventListener('change', getVal);
 getTo.addEventListener('change', getVal);
 
 function gatherData(){
-    // use session storage to get the data
+    // use session storage to store the data
+    sessionStorage.setItem("department", $('#choose-dep option:selected').text());
+    sessionStorage.setItem("would-like-send", $('#what-to-send option:selected').text());
+    sessionStorage.setItem('whoAreYou', $('#who-are-you option:selected').text());
+    sessionStorage.setItem('sendFrom', $('#from-autocomplete').val());
+    sessionStorage.setItem('sendTo', $('#to-autocomplete').val());
     sessionStorage.setItem("email", $('input[type=email]').val());
+    sessionStorage.setItem('moreDetails', $('#form__textarea').val());
 }
 
 $(submit).on('click', gatherData);
