@@ -80,7 +80,41 @@
           <div class="col-md-12"></div>
         </div>
       </div>
+
+      <div class="container mb-5 d-block d-md-none">
+        <div class="row">
+          <div class="col-md-12"></div>
+        </div>
+      </div>
  <!-- DESIGN PURPOSES -->
+
+ <div class="container">
+     <div class="row">
+         <div class="col-md-12">
+            <div class="card testimonial-card">
+
+                <!-- Background color -->
+                <div class="card-up blue-gradient"></div>
+              
+                <!-- Avatar -->
+                <div class="avatar mx-auto white">
+                  <img src="img/main-icon.png" class="header__logo rounded-circle" alt="woman avatar">
+                </div>
+              
+                <!-- Content -->
+                <div class="card-body">
+                  <!-- Name -->
+                  <h4 class="card-title">Shipment Resume</h4>
+                  <hr>
+                  <!-- Quotation -->
+                  <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci</p>
+                </div>
+              
+              </div>
+              <!-- Card -->
+         </div>
+     </div>
+ </div>
 
  
     </main>
@@ -114,21 +148,17 @@
     <script src="js/vendors/jquery-3.4.1.min.js"></script>
     <script src="js/vendors/bootstrap.min.js"></script>
     <script src="js/vendors/mdb.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-  crossorigin="anonymous"></script>
-  <script src="js/vendors/devtools-detect.js"></script>
+    <script src="js/vendors/devtools-detect.js"></script>
 
-  <!-- SELF -->
+    <!-- SELF -->
     <script src="js/sidebar.js"></script>
     <script src="js/select-options.js"></script>
     <script type="module">
-                // Get notified when it's opened/closed
+             // Get notified when it's opened/closed
             window.addEventListener('devtoolschange', event => {
                 if(event.detail.isOpen) $('.main-content').css('display','none');
             });
       </script>
-      <script src="js/autocomplete.js"></script>
-      <script src="js/retrieve-info-select.js"></script>
+      <script type="module" src="js/summary.js"></script>
 </body>
 </html>

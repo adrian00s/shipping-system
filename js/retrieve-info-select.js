@@ -56,7 +56,6 @@ function department(e){
         $(ids.whoAreYou).append(  
             `<option value="${people[i]}">${people[i]}</option>`);
     }
-   
 }
 
 ids.getDepartment.addEventListener('change', department);

@@ -76,6 +76,12 @@ function getVal(){
 getFrom.addEventListener('change', getVal);
 getTo.addEventListener('change', getVal);
 
+function gatherData(){
+    // use session storage to get the data
+    sessionStorage.setItem("email", $('input[type=email]').val());
+}
+
+$(submit).on('click', gatherData);
 
 // hide nodes created by jquery ui
 $('.ui-autocomplete, .ui-menu-item, .ui-helper-hidden-accessible').css('display', 'none');

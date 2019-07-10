@@ -82,7 +82,7 @@
       </div>
  <!-- DESIGN PURPOSES -->
 
- <form action="confirm-shipment.html" id="main-form">
+ <form action="confirm-shipment.html" id="main-form" method="GET">
         <div class="container">
             <div class="row select-department__row">
                 <div class="col-md-6">
@@ -228,7 +228,7 @@
     <script src="js/sidebar.js"></script>
     <script src="js/select-options.js"></script>
     <script type="module">
-                // Get notified when it's opened/closed
+              // Get notified when it's opened/closed
             window.addEventListener('devtoolschange', event => {
                 if(event.detail.isOpen) $('.main-content').css('display','none');
             });
